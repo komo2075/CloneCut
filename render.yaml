@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: batch-video-tool
-    env: python
-    buildCommand: ""
-    startCommand: python server.py
-    plan: free
