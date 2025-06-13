@@ -1,0 +1,4 @@
+flask
+werkzeug
+moviepy
+ffmpeg-python
