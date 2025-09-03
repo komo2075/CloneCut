@@ -1,0 +1,31 @@
+CloneCut - 版本信息 / Version Information
+
+版本号 / Version: v1.0.0
+发布日期 / Release Date: 2025-06-22
+
+📝 简介 / Description:
+CloneCut 是一个轻巧的本地工具，专为将 9:16 竖版视频批量转换为多种尺寸而设计（支持 1:1、16:9、4:5、2:3 等比例）。
+用户可使用模块化命名系统自定义文件名，工具运行完全离线，无需安装，最终生成高质量 .mp4 文件并打包为 zip。
+
+CloneCut is a lightweight local tool designed to batch resize vertical 9:16 videos into multiple aspect ratios 
+(1:1, 16:9, 4:5, 2:3). With a modular naming block system, it runs fully offline, requires no installation, and 
+exports high-quality .mp4 files as a zip package.
+
+📦 本版本更新 / New in this version:
+- 首次公开发布 / Initial public release
+- 上传竖版视频，支持选择多个导出尺寸 / Upload a vertical video and select multiple output sizes
+- 模块化命名系统支持自由组合命名 / Smart “naming block” system for custom file names
+- 一键导出并自动打包为 zip / One-click export and zip packaging
+- 集成 ffmpeg，免配置依赖 / Integrated ffmpeg backend, no external dependencies
+- 全离线运行，数据安全 / Fully offline, secure, and portable
+
+🖥 系统要求 / Requirements:
+- Windows 10 或更高版本 / Windows 10 or later
+- 浏览器：Chrome / Edge / Firefox / Browser support: Chrome / Edge / Firefox
+
+🆓 授权说明 / License:
+- 免费用于个人与商业用途 / Free for personal and commercial use
+- 当前版本暂未开源 / Not open-sourced at this stage
+
+👤 作者 / Author:
+OVO Group
