@@ -1,0 +1,9 @@
+Flask==3.0.3
+moviepy==1.0.3
+opencv-python==4.10.0.84
+numpy==1.26.4
+Pillow==10.4.0
+imageio==2.34.2
+imageio-ffmpeg==0.5.1
+proglog==0.1.10
+tqdm==4.66.4

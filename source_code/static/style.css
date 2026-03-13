@@ -1,0 +1,186 @@
+/* 全局样式 */
+body {
+  background: #282627;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+/* 模块标题 */
+h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #ffffff;
+  border-left: 4px solid #8884ff;
+  padding-left: 10px;
+}
+
+/* 按钮基础样式：半透明渐变 */
+button {
+  background: linear-gradient(to bottom, rgba(202, 158, 105, 0.847), rgba(57, 72, 104, 0.719));
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, rgba(222, 183, 135, 0.9), rgba(99, 147, 177, 0.689));
+}
+
+/* 积木容器 */
+.brick-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* 通用积木样式 */
+.brick {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+/* 橙色积木（常用相同名） */
+.brick[data-type="fixed"] {
+  background: linear-gradient(to bottom, rgba(220, 161, 90, 0.7), rgba(55, 80, 109, 0.685));
+  color: white;
+  font-weight: bold;
+}
+
+/* 绿色积木（区别名） */
+.brick[data-type="custom"] {
+  background: linear-gradient(to bottom, rgba(92, 133, 92, 0.742), rgba(44, 142, 109, 0.491));
+  color: white;
+}
+
+/* 蓝色积木（模板） */
+.brick[data-type="template"] {
+  background: linear-gradient(to bottom, rgba(101, 175, 235, 0.7), rgba(150, 188, 218, 0.783));
+  color: white;
+}
+
+/* 积木内的输入框样式 */
+.inline-editor {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+  min-width: 60px;
+}
+
+.inline-editor:disabled {
+  opacity: 0.9;
+}
+
+/* 编辑图标 */
+.edit-icon {
+  margin-left: 6px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* 删除按钮 */
+.del-btn,
+.delete-confirm,
+.brick button {
+  margin-left: 4px;
+  background: rgba(255, 80, 80, 0.7);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.brick button:hover {
+  background: rgba(255, 80, 80, 1);
+}
+
+/* 模板预览面板（模块3 和 模块4 统一） */
+.template-preview {
+  border-radius: 12px;
+  background: rgba(62, 62, 62, 0.808);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 14px;
+  margin-top: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(91, 91, 91, 0.347);
+}
+
+/* 模板详情中的积木序列 */
+#templatePreviewBricks .brick,
+#templateDetailBricks .brick {
+  background: rgba(255, 255, 255, 0.845);
+  color: #333;
+}
+
+/* 模板名称标题 */
+#templatePreviewTitle,
+#templateDetailTitle {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #6b7de6;
+}
+
+/* 自定义输入区 */
+#customInputs input,
+#customDetailInputs input {
+  margin-left: 6px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* 模块按钮控制区域 */
+#editControlButtons button,
+#templateEditControls button {
+  background: linear-gradient(to bottom, rgba(0, 128, 255, 0.5), rgba(0, 128, 255, 0));
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+#customDetailPanel {
+  background: rgba(50, 50, 50, 0.85);  /* 原来是 #f7f7f7，太浅了 */
+  color: #000000;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+#templatePreviewArea {
+  border-radius: 12px;
+  background: rgba(60, 60, 60, 0.85);  /* 改为暗色半透明 */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  margin-top: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(91, 91, 91, 0.347);
+  color: #000000;
+}
+
+/* CloneCut2.1 */
+/* 警告信息样式 */
+.danger {
+  color: #ff4d4f;
+  font-weight: bold;
+  white-space: pre-line; /* 让 \n 换行生效 */
+  margin-top: 10px;
+}

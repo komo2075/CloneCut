@@ -1,0 +1,166 @@
+CloneCut - Source Code Guide
+Version: 1.0.5
+Developer: Coco
+
+
+------------------------------------------------------------
+
+1. Introduction
+
+CloneCut is a lightweight local tool designed to batch convert vertical 9:16 videos into multiple aspect ratios such as:
+
+1:1
+16:9
+4:5
+2:3
+
+The program runs entirely on the local computer.  
+All video processing is performed locally using FFmpeg.  
+No data is uploaded to external servers.
+
+CloneCut provides a simple browser interface where users can upload a video, configure output sizes, customize file names, and export the final videos as a ZIP package.
+
+
+------------------------------------------------------------
+
+2. System Requirements
+
+Operating System
+Windows 10 or Windows 11 recommended
+
+Python
+Python 3.10 or higher
+
+Browser
+Chrome, Edge, or any modern browser
+
+FFmpeg
+The project requires FFmpeg. A local ffmpeg.exe is included in the project folder.
+
+
+------------------------------------------------------------
+
+3. Install Python Dependencies
+
+Open terminal or PowerShell in the project directory and run:
+
+pip install -r requirements.txt
+
+If the requirements file is missing, install manually:
+
+pip install flask
+pip install pillow
+
+
+------------------------------------------------------------
+
+4. Project Structure
+
+Important files and folders:
+
+server.py
+Main backend server responsible for video processing and routing.
+
+templates/
+Contains HTML interface files.
+
+static/
+Contains CSS, JavaScript, and interface assets.
+
+ffmpeg.exe
+Video processing engine used by CloneCut.
+
+requirements.txt
+Python dependency list.
+
+
+------------------------------------------------------------
+
+5. Running the Program
+
+Step 1
+Open terminal in the project folder.
+
+Step 2
+Start the server:
+
+python server.py
+
+Step 3
+Open your browser and visit:
+
+http://127.0.0.1:5000
+
+The CloneCut interface should appear.
+
+
+------------------------------------------------------------
+
+6. Basic Usage
+
+1 Upload a vertical 9:16 video
+2 Select the output sizes you want
+3 Configure naming blocks if needed
+4 Click Export
+5 Wait for processing
+6 Download the generated ZIP file
+
+
+------------------------------------------------------------
+
+7. Processing Time
+
+Processing speed depends on:
+
+video length
+CPU performance
+disk speed
+
+Reference example:
+
+A 15 second video generating all sizes usually takes about 1 minute.
+
+
+------------------------------------------------------------
+
+8. Troubleshooting
+
+Problem
+Python command not recognized
+
+Solution
+Install Python and add Python to PATH.
+
+
+Problem
+Module not found
+
+Solution
+Run:
+
+pip install -r requirements.txt
+
+
+Problem
+FFmpeg error
+
+Solution
+Ensure ffmpeg.exe exists in the project folder.
+
+
+------------------------------------------------------------
+
+9. Notes
+
+CloneCut is designed to run completely offline.  
+No internet connection is required during video processing.
+
+
+------------------------------------------------------------
+
+10. Contact
+
+Developer
+Coco
+
+Thank you for using CloneCut.
